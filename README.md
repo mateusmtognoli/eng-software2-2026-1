@@ -51,54 +51,54 @@ Configuração de intervalo entre doses (ex: a cada 8h)
 
 ## 🛠️ Requisitos Não Funcionais
 
-\-> Usabilidade
+### Usabilidade
 
---Interface simples e intuitiva
+    Interface simples e intuitiva
 
---Linguagem clara e acessível
+    Linguagem clara e acessível
 
---Suporte a acessibilidade (fonte grande, contraste, leitura por voz)
-
-
-\->Desempenho
-
---Tempo de resposta inferior a 2 segundos
-
---Baixo consumo de bateria
+    Suporte a acessibilidade (fonte grande, contraste, leitura por voz)
 
 
-\->Segurança
+### Desempenho
 
---Criptografia de dados
+    Tempo de resposta inferior a 2 segundos
 
---Conformidade com LGPD
-
-
-\-> Compatibilidade
-
---Disponível para Android e iOS
-
---Suporte a múltiplos idiomas
+    Baixo consumo de bateria
 
 
-\->Confiabilidade e Escalabilidade
+### Segurança
 
---Disponibilidade de 99%
+    Criptografia de dados
 
---Suporte a pelo menos 10.000 usuários simultâneos
-
---Alta confiabilidade nos alarmes
-
---Backup automático
-
---Sincronização local e/ou em nuvem
+    Conformidade com LGPD
 
 
-\->Distribuição
+### Compatibilidade
 
---Aplicativo leve
+    Disponível para Android e iOS
 
---Instalação simples
+    Suporte a múltiplos idiomas
+
+
+### Confiabilidade e Escalabilidade
+
+    Disponibilidade de 99%
+
+    Suporte a pelo menos 10.000 usuários simultâneos
+
+    Alta confiabilidade nos alarmes
+
+    Backup automático
+
+    Sincronização local e/ou em nuvem
+
+
+### Distribuição
+
+    Aplicativo leve
+
+    Instalação simples
 
 #####
 
