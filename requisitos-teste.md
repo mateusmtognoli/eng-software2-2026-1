@@ -1,41 +1,41 @@
 # Requisitos Funcionais
 
-| ID   | Descrição                                                                 |
-|------|---------------------------------------------------------------------------|
-| RF01 | Permitir cadastro de usuário no aplicativo                                |
-| RF02 | Permitir login e logout seguro                                            |
-| RF03 | Permitir seleção de criptomoedas para monitoramento                       |
-| RF04 | Permitir remoção de criptomoedas da lista                                 |
-| RF05 | Exibir preços em tempo real ou quase real                                 |
-| RF06 | Monitorar continuamente variações de preço                                |
-| RF07 | Permitir configuração de limites de variação                              |
-| RF08 | Enviar alertas ao atingir limites configurados                            |
-| RF09 | Notificar sobre eventos relevantes (notícias, regulamentações, etc.)      |
-| RF10 | Coletar e processar dados históricos                                      |
-| RF11 | Aplicar modelos de análise preditiva                                      |
-| RF12 | Calcular probabilidade de eventos futuros                                 |
-| RF13 | Alertar quando probabilidade ultrapassar limiar                           |
-| RF14 | Exibir histórico de preços                                                |
-| RF15 | Exibir histórico de alertas                                               |
-| RF16 | Configurar preferências de notificação                                    |
-| RF17 | Atualizar dados automaticamente                                           |
-| RF18 | Tratar falhas na obtenção de dados                                        |
+| ID   | Requisito | Categoria |
+|------|----------|----------|
+| RF01 | O sistema deve permitir cadastrar medicamentos com nome, dosagem e horário. | Cadastro |
+| RF02 | O sistema deve permitir configurar alarmes para horários específicos de cada medicamento. | Alerta/Notificação |
+| RF03 | O sistema deve enviar notificações no momento do horário do medicamento. | Notificação |
+| RF04 | O sistema deve permitir confirmar a ingestão do medicamento. | Registro |
+| RF05 | O sistema deve registrar o histórico de medicamentos tomados e não tomados. | Histórico |
+| RF06 | O sistema deve permitir editar e excluir medicamentos cadastrados. | Cadastro |
+| RF07 | O sistema deve emitir alertas recorrentes caso o usuário não confirme o uso do medicamento. | Alerta/Notificação |
+| RF08 | O sistema deve permitir cadastrar múltiplos usuários (ex: cuidador e paciente). | Usuário |
+| RF09 | O sistema deve enviar notificações para cuidadores quando o medicamento não for tomado. | Notificação |
+| RF10 | O sistema deve permitir configurar lembretes com som, vibração ou ambos. | Configuração |
+| RF11 | O sistema deve exibir uma lista diária dos medicamentos a serem tomados. | Visualização |
+| RF12 | O sistema deve permitir o cadastro de instruções adicionais (ex: "tomar com comida"). | Cadastro |
+| RF13 | O sistema deve funcionar offline para alarmes já configurados. | Sistema |
+| RF14 | O sistema deve permitir repetição de medicamentos (diário, semanal, etc.). | Configuração |
+| RF15 | O sistema deve permitir configurar intervalo entre doses (ex: a cada 8 horas). | Configuração |
+
+---
 
 # Requisitos Não Funcionais
 
-| ID    | Descrição                                                     | Categoria          |
-|-------|---------------------------------------------------------------|--------------------|
-| RNF01 | Tempo de resposta inferior a 2 segundos                       | Desempenho         |
-| RNF02 | Atualização frequente de dados (intervalos curtos)            | Desempenho         |
-| RNF03 | Disponibilidade mínima de 99,5%                               | Confiabilidade     |
-| RNF04 | Escalabilidade para múltiplos usuários                        | Escalabilidade     |
-| RNF05 | Criptografia de dados sensíveis                               | Segurança          |
-| RNF06 | Autenticação segura (OAuth, JWT ou similar)                   | Segurança          |
-| RNF07 | Proteção contra ataques (SQL Injection, XSS)                  | Segurança          |
-| RNF08 | Garantia de integridade dos dados                             | Confiabilidade     |
-| RNF09 | Interface intuitiva e fácil navegação                         | Usabilidade        |
-| RNF10 | Compatibilidade com Android e iOS                             | Portabilidade      |
-| RNF11 | Entrega de notificações com baixa latência                    | Desempenho         |
-| RNF12 | Registro de logs e auditoria                                  | Confiabilidade     |
-| RNF13 | Integração com APIs externas                                  | Interoperabilidade |
-| RNF14 | Manutenção sem impacto significativo                          | Confiabilidade     |
+| ID    | Requisito | Categoria |
+|-------|----------|----------|
+| RNF01 | O sistema deve ter interface simples e intuitiva, adequada para idosos. | Usabilidade |
+| RNF02 | O sistema deve apresentar tempo de resposta inferior a 2 segundos para ações comuns. | Desempenho |
+| RNF03 | O sistema deve garantir disponibilidade de 99% do tempo. | Disponibilidade |
+| RNF04 | O sistema deve ser compatível com Android e iOS. | Compatibilidade |
+| RNF05 | O sistema deve garantir segurança dos dados do usuário (criptografia). | Segurança |
+| RNF06 | O sistema deve ter suporte a acessibilidade (fonte grande, alto contraste, leitura por voz). | Acessibilidade |
+| RNF07 | O sistema deve consumir pouca bateria do dispositivo. | Eficiência |
+| RNF08 | O sistema deve armazenar dados localmente e/ou na nuvem com sincronização automática. | Armazenamento |
+| RNF09 | O sistema deve suportar pelo menos 10.000 usuários simultâneos. | Escalabilidade |
+| RNF10 | O sistema deve permitir backup automático dos dados. | Confiabilidade |
+| RNF11 | O sistema deve seguir as diretrizes de privacidade de dados (ex: LGPD). | Conformidade |
+| RNF12 | O sistema deve ter alta confiabilidade na execução dos alarmes (não pode falhar). | Confiabilidade |
+| RNF13 | O sistema deve ter instalação simples e leve (tamanho reduzido do app). | Portabilidade |
+| RNF14 | O sistema deve possuir linguagem clara e compreensível. | Usabilidade |
+| RNF15 | O sistema deve suportar múltiplos idiomas (português, inglês, etc.). | Internacionalização |
