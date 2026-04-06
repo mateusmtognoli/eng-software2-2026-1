@@ -15,7 +15,7 @@
 
 #####
 
-## ⚙️ Funcionalidades (Requisitos Funcionais)
+## ⚙️ Requisitos Funcionais
 
 Cadastro de medicamentos com nome, dosagem e horário
 
