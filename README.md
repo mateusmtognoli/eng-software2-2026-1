@@ -2,16 +2,16 @@
 
 ## 📌 Descrição
 
-\-> O Sistema de Gerenciamento de Medicamentos é um aplicativo desenvolvido para auxiliar usuários — especialmente idosos e seus cuidadores — no controle do uso correto de medicamentos.
+\⭢ O Sistema de Gerenciamento de Medicamentos é um aplicativo desenvolvido para auxiliar usuários — especialmente idosos e seus cuidadores — no controle do uso correto de medicamentos.
 
-\-> O sistema permite cadastrar remédios, configurar alarmes, enviar notificações e registrar o histórico de ingestão, garantindo mais segurança e organização no tratamento.
+\⭢ O sistema permite cadastrar remédios, configurar alarmes, enviar notificações e registrar o histórico de ingestão, garantindo mais segurança e organização no tratamento.
 
 
 #####
 
 ## 🎯 Objetivo
 
-\->Facilitar o acompanhamento do uso de medicamentos, reduzindo esquecimentos e promovendo maior adesão ao tratamento médico.
+⭢ Facilitar o acompanhamento do uso de medicamentos, reduzindo esquecimentos e promovendo maior adesão ao tratamento médico.
 
 #####
 
@@ -61,23 +61,20 @@
 
 ## 👥 Público-Alvo
 
-Idosos
-
-Pacientes em tratamento contínuo
-
-Cuidadores e familiares
+⭢ Idosos
+⭢ Pacientes em tratamento contínuo
+⭢ Cuidadores e familiares
 
 #####
 
-## 🚀 Possíveis Melhorias Futuras
 
-Integração com dispositivos vestíveis (smartwatches)
+## 👨‍💻 Membros
 
-Relatórios médicos exportáveis
-
-Integração com farmácias
-
-Inteligência para sugestão de horários
+⭢ **João Pedro Soares**
+⭢ **Julia Espiñeira**
+⭢ **Mateus Marcondes Tognoli**
+⭢ **Mariah Paula Rocha**
+⭢ **Reynaldo José Ramos**
 
 #####
 
