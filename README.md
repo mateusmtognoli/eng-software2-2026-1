@@ -9,11 +9,13 @@
 
 #####
 
+
 ## 🎯 Objetivo
 
 ⭢ Facilitar o acompanhamento do uso de medicamentos, reduzindo esquecimentos e promovendo maior adesão ao tratamento médico.
 
 #####
+
 
 ## ⚙️ Requisitos Funcionais
 
@@ -37,6 +39,7 @@
 
 #####
 
+
 ## 🛠️ Requisitos Não Funcionais
 
 | ID    | Requisito | Categoria |
@@ -59,10 +62,13 @@
 
 #####
 
+
 ## 👥 Público-Alvo
 
 ⭢ Idosos
+
 ⭢ Pacientes em tratamento contínuo
+
 ⭢ Cuidadores e familiares
 
 #####
@@ -71,9 +77,13 @@
 ## 👨‍💻 Membros
 
 ⭢ **João Pedro Soares**
+
 ⭢ **Julia Espiñeira**
+
 ⭢ **Mateus Marcondes Tognoli**
+
 ⭢ **Mariah Paula Rocha**
+
 ⭢ **Reynaldo José Ramos**
 
 #####
