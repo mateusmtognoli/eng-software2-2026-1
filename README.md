@@ -1,21 +1,70 @@
-# 💊 ReMed 
+# 💊 ReMed - Sistema de Gerenciamento de Medicamentos
+
+  ![Status](https://img.shields.io/badge/status-em%20desenvolvimento-yellow)
+  ![Engenharia de Software](https://img.shields.io/badge/Engenharia%20de%20Software-II-green)
 
 ## 📌 Descrição
 
-⭢ O Sistema de Gerenciamento de Medicamentos é um aplicativo desenvolvido para auxiliar usuários — especialmente idosos e seus cuidadores — no controle do uso correto de medicamentos.
+⭢ O ReMed é um aplicativo desenvolvido para auxiliar usuários — especialmente idosos e seus cuidadores — no controle do uso correto de medicamentos.
 
 ⭢ O sistema permite cadastrar remédios, configurar alarmes, enviar notificações e registrar o histórico de ingestão, garantindo mais segurança e organização no tratamento.
 
+#####
+
+## 🎯 Objetivos
+
+⭢ Garantir o uso correto dos medicamentos  
+⭢ Reduzir esquecimentos e falhas no tratamento  
+⭢ Facilitar o acompanhamento por cuidadores  
+⭢ Melhorar a organização da rotina de medicação  
+⭢ Aumentar a segurança e autonomia do paciente  
+⭢ Oferecer uma interface simples e acessível  
 
 #####
 
+## 👥 Atores / Personas
 
-## 🎯 Objetivo
+[Ver Personas](link)
 
-⭢ Facilitar o acompanhamento do uso de medicamentos, reduzindo esquecimentos e promovendo maior adesão ao tratamento médico.
+### 🧓 Paciente
 
-#####
+⭢ Utiliza o sistema para controlar seus medicamentos  
+⭢ Recebe alertas nos horários corretos  
+⭢ Confirma a ingestão dos remédios  
+⭢ Precisa de uma interface simples e acessível  
+⭢ Pode visualizar seu histórico de uso  
 
+---
+
+### 👨‍⚕️ Cuidador / Responsável
+
+⭢ Acompanha o uso de medicamentos do paciente  
+⭢ Recebe notificações caso o medicamento não seja tomado  
+⭢ Auxilia na organização da rotina de medicação  
+⭢ Monitora o histórico de ingestão  
+⭢ Pode gerenciar medicamentos do paciente  
+
+---
+
+### 👩‍💻 Administrador
+
+⭢ Gerencia o funcionamento geral do sistema  
+⭢ Monitora desempenho e disponibilidade  
+⭢ Analisa dados e indicadores de uso  
+⭢ Garante segurança e integridade dos dados  
+⭢ Realiza manutenção e atualizações do sistema  
+
+####
+
+## ⚠️ Principais Dores
+
+⭢ Esquecimento de horários de medicamentos  
+⭢ Falta de controle sobre doses tomadas  
+⭢ Dificuldade de acompanhamento por cuidadores  
+⭢ Erros na administração (dosagem/intervalo)  
+⭢ Falta de organização no tratamento  
+
+####
 
 ## ⚙️ Requisitos Funcionais
 
