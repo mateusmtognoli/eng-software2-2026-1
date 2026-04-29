@@ -24,7 +24,7 @@
 
 ## 👥 Atores / Personas
 
-[Ver Personas]([link](https://github.com/mateusmtognoli/eng-software2-2026-1/issues/1))
+[Ver Personas](https://github.com/mateusmtognoli/eng-software2-2026-1/issues/1)
 
 ### 🧓 Paciente
 
