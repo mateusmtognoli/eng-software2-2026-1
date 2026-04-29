@@ -1,7 +1,7 @@
 # 💊 ReMed - Sistema de Gerenciamento de Medicamentos
 
-  ![Status](https://img.shields.io/badge/status-em%20desenvolvimento-yellow)
   ![Engenharia de Software](https://img.shields.io/badge/Engenharia%20de%20Software-II-green)
+  ![Status](https://img.shields.io/badge/status-em%20desenvolvimento-orange)
 
 ## 📌 Descrição
 
@@ -111,6 +111,11 @@
 
 #####
 
+## 📝 Casos de Uso
+
+[Ver Casos de Uso](adicionarlinkaqui)
+
+####
 
 ## 👥 Público-Alvo
 
@@ -122,6 +127,19 @@
 
 #####
 
+## 🛠️ Tecnologias Utilizadas (Futuramente)
+
+- Frontend: React Native
+- Backend: TypeScript
+- Banco de Dados: 
+
+####
+
+## 💻Protótipo
+
+[Ver Protótipo](adicionarlinkdoprototipo)
+
+####
 
 ## 👨‍💻 Membros
 
