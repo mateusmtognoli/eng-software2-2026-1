@@ -142,7 +142,7 @@
 
 [Ver Protótipo - Versão Responsável](https://stitch.withgoogle.com/preview/13850123973368173922?node-id=a9e8f65114cb4280b695412e4a6a4638)
 
-[Ver Protótipo - Versão Administrador](adicionarlinkdoprototipo)
+[Ver Protótipo - Versão Administrador](https://stitch.withgoogle.com/preview/12183420891408613794?node-id=bdce2ebd1bd34224964dc9ea0783f5f6)
 
 ####
 
