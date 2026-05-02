@@ -77,7 +77,7 @@
 | RF05 | O sistema deve registrar o histórico de medicamentos tomados e não tomados. | Histórico |
 | RF06 | O sistema deve permitir editar e excluir medicamentos cadastrados. | Cadastro |
 | RF07 | O sistema deve emitir alertas recorrentes caso o usuário não confirme o uso do medicamento. | Alerta/Notificação |
-| RF08 | O sistema deve permitir cadastrar múltiplos usuários (ex: cuidador e paciente). | Usuário |
+| RF08 | O sistema deve permitir cadastrar múltiplos usuários (ex: responsável e dependente). | Usuário |
 | RF09 | O sistema deve enviar notificações para cuidadores quando o medicamento não for tomado. | Notificação |
 | RF10 | O sistema deve permitir configurar lembretes com som, vibração ou ambos. | Configuração |
 | RF11 | O sistema deve exibir uma lista diária dos medicamentos a serem tomados. | Visualização |
