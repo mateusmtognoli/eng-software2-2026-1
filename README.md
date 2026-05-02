@@ -85,6 +85,7 @@
 | RF13 | O sistema deve funcionar offline para alarmes já configurados. | Sistema |
 | RF14 | O sistema deve permitir repetição de medicamentos (diário, semanal, etc.). | Configuração |
 | RF15 | O sistema deve permitir configurar intervalo entre doses (ex: a cada 8 horas). | Configuração |
+| RF16 | O sistema deve permitir o controle do estoque de medicamentos pelo usuário. | Usuário |
 
 #####
 
