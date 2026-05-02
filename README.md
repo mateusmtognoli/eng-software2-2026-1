@@ -131,7 +131,7 @@
 
 - Frontend: React Native
 - Backend: TypeScript
-- Banco de Dados: 
+- Banco de Dados: MySQL
 
 ####
 
