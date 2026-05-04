@@ -317,9 +317,9 @@ Os protótipos permitiram identificar melhorias na usabilidade, organização da
 
 Caso queira visualizar o protótipo completo, acesse:
 
-[Ver Protótipo - Versão Usuários](https://ais-pre-4j3ii52jwzrkr4q653denk-157702196272.us-west2.run.app)
+[Protótipo - Versão Usuários](https://ais-pre-4j3ii52jwzrkr4q653denk-157702196272.us-west2.run.app)
 
-[Ver Protótipo - Versão Administrador](https://stitch.withgoogle.com/preview/12183420891408613794?node-id=bdce2ebd1bd34224964dc9ea0783f5f6)
+[Protótipo - Versão Administrador](https://stitch.withgoogle.com/preview/12183420891408613794?node-id=bdce2ebd1bd34224964dc9ea0783f5f6)
 
 ####
 
