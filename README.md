@@ -131,15 +131,13 @@
 
 - Frontend: React Native
 - Backend: TypeScript
-- Banco de Dados: MySQL
+- Banco de Dados: MySQL / SQLite
 
 ####
 
 ## 💻Protótipo
 
-[Ver Protótipo - Versão Dependente](https://stitch.withgoogle.com/preview/13850123973368173922?node-id=e2150ca5d65e407b87a4f515efcdc578)
-
-[Ver Protótipo - Versão Responsável](https://stitch.withgoogle.com/preview/13850123973368173922?node-id=a9e8f65114cb4280b695412e4a6a4638)
+[Ver Protótipo - Versão Usuários](https://ais-pre-4j3ii52jwzrkr4q653denk-157702196272.us-west2.run.app)
 
 [Ver Protótipo - Versão Administrador](https://stitch.withgoogle.com/preview/12183420891408613794?node-id=bdce2ebd1bd34224964dc9ea0783f5f6)
 
