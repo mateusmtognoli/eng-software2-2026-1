@@ -56,6 +56,16 @@
 
 ####
 
+## 👥 Público-Alvo
+
+⭢ Idosos
+
+⭢ Pacientes em tratamento contínuo
+
+⭢ Cuidadores e familiares
+
+#####
+
 ## ⚠️ Principais Dores
 
 ⭢ Esquecimento de horários de medicamentos  
@@ -113,32 +123,161 @@
 
 ## 📝 Casos de Uso
 
-[Ver Casos de Uso](https://github.com/mateusmtognoli/eng-software2-2026-1/tree/e276870ed7159e77d61e4183302c9812b0004fc0/DOCS/CASOS_DE_USO)
+Os casos de uso representam as interações entre os diferentes tipos de usuários e o sistema, descrevendo suas funcionalidades principais.
+
+O sistema foi projetado considerando quatro tipos de atores:
+
+⭢ Paciente (Independente)
+
+⭢ Paciente Dependente
+
+⭢ Responsável
+
+⭢ Administrador
+
+---
+
+- Paciente (Independente)
+
+O paciente independente possui controle total sobre suas ações dentro do sistema:
+
+⭢ UC01: Visualizar lista diária de medicamentos
+
+⭢ UC02: Confirmar ingestão de medicamento
+
+⭢ UC03: Visualizar histórico de ingestão
+
+⭢ UC04: Configurar lembretes (som/vibração)
+
+---
+
+- Paciente Dependente
+
+O paciente dependente possui interações mais limitadas e assistidas:
+
+⭢ UCD01: Receber notificação de medicamento
+
+⭢ UCD02: Confirmar ingestão via notificação
+
+⭢ UCD03: Visualizar lista diária (somente leitura)
+
+⭢ UCD04: Receber alerta recorrente (caso não confirme)
+
+---
+
+- Responsável
+
+O responsável atua no acompanhamento e gestão dos pacientes dependentes:
+
+⭢ UC01: Criar conta
+
+⭢ UC02: Fazer login
+
+⭢ UC03: Visualizar dashboard
+
+⭢ UC04: Cadastrar medicamento
+
+⭢ UC05: Visualizar histórico
+
+⭢ UC06: Gerar relatório mensal
+
+⭢ UC07: Visualizar dashboard do dependente
+
+⭢ UC08: Gerenciar dependentes
+
+⭢ UC09: Gerenciar rede de cuidado
+
+---
+
+🛠️ Administrador
+
+O administrador é responsável pela gestão e manutenção do sistema:
+
+⭢ UC12: Monitorar desempenho do sistema
+
+⭢ UC13: Realizar manutenção e atualizações
+
+⭢ UC14: Garantir segurança dos dados
+
+⭢ UC15: Configurar backup automático
+
+---
+
+- Diagramas de Casos de Uso
+  
+[CLique aqui para ver os diagramas de casos de uso](DOCS/CASOS_DE_USO)
 
 ####
 
-## 👥 Público-Alvo
+🧩 Diagrama de Classes
 
-⭢ Idosos
+O diagrama de classes apresenta a estrutura do sistema, incluindo suas entidades, atributos, métodos e relacionamentos.
 
-⭢ Pacientes em tratamento contínuo
+---
 
-⭢ Cuidadores e familiares
+- Principais Entidades
 
-#####
+O sistema é composto pelas seguintes classes principais:
 
-## 🛠️ Tecnologias Utilizadas (Futuramente)
+⭢ Usuário (classe base)
 
-- Frontend: React Native
-- Backend: TypeScript
-- Banco de Dados: MySQL / SQLite
+⭢ Dependente
+
+⭢ Responsável
+
+⭢ Administrador
+
+⭢ Medicamento
+
+⭢ LembreteDose
+
+⭢ RegistroDose
+
+⭢ EstoqueMedicamento
+
+⭢ Notificação
+
+⭢ RelatorioAdesao
+
+⭢ FichaMedica
+
+⭢ Instituição
+
+---
+
+- Relacionamentos
+  
+⭢ A classe Usuário possui herança para Dependente, Responsável e Administrador
+
+⭢ Um Dependente possui uma Ficha Médica
+
+⭢ Um Medicamento está associado a lembretes e registros de dose
+
+⭢ O sistema gera Notificações para os usuários
+
+⭢ Dados de uso são consolidados em Relatórios de Adesão
+
+⭢ O Administrador gerencia o sistema e suas configurações
+
+---
+
+- Observações Técnicas
+  
+⭢ O modelo utiliza conceitos de herança, composição e agregação
+
+⭢ Os identificadores são baseados em UUID
+
+⭢ O sistema contempla controle de estoque, notificações e relatórios
+
+---
+
+[Clique aqui para acessar o diagrama de classes](DOCS/diagrama_classes_remed.png)
 
 ####
 
-## 💻Prototipação
+## 💻 Prototipação
 
 A prototipação do sistema foi realizada com o objetivo de visualizar a interface do usuário e validar a experiência antes da implementação.
-
 
 Foram desenvolvidos protótipos de alta fidelidade, representando as principais telas do sistema, como:
 
@@ -155,16 +294,22 @@ Foram desenvolvidos protótipos de alta fidelidade, representando as principais 
 
 Os protótipos permitiram identificar melhorias na usabilidade, organização das informações e fluxo de navegação, garantindo uma experiência mais intuitiva para o usuário final.
 
+---
+
 - Ferramentas utilizadas:
 
   ⭢ Google Stitch
 
   ⭢ Google AI Studio
 
+---
+
 - Preview do Protótipo
 
 ![Dashboard do Usuário](https://github.com/mateusmtognoli/eng-software2-2026-1/blob/main/DOCS/IMAGENS%20PROTOTIPO/tela-inicial-remed.png)
 ![Dashboard do Administrador](https://github.com/mateusmtognoli/eng-software2-2026-1/blob/main/DOCS/IMAGENS%20PROTOTIPO/tela-inicial-remed-administrador.png)
+
+---
 
 - Acesso ao Protótipo
 
@@ -173,6 +318,34 @@ Caso queira visualizar o protótipo completo, acesse:
 [Ver Protótipo - Versão Usuários](https://ais-pre-4j3ii52jwzrkr4q653denk-157702196272.us-west2.run.app)
 
 [Ver Protótipo - Versão Administrador](https://stitch.withgoogle.com/preview/12183420891408613794?node-id=bdce2ebd1bd34224964dc9ea0783f5f6)
+
+####
+
+## 🎥 Apresentação do Projeto
+
+Para uma melhor compreensão do funcionamento do sistema, foi desenvolvida um vídeo de apresentação demonstrando suas principais funcionalidades, objetivos e estrutura.
+
+Nela, são abordados:
+
+⭢ Dores resolvidas
+
+⭢ Diagrama de Casos de Uso
+
+⭢ Diagrama de Classes
+
+⭢ Apresentação do protótipo
+
+---
+
+[Clique aqui para ver o vídeo de apresentação](https://youtu.be/zbpmw8rTQWk)
+
+####
+
+## 🛠️ Tecnologias Utilizadas (Futuramente)
+
+- Frontend: React Native
+- Backend: TypeScript
+- Banco de Dados: MySQL / SQLite
 
 ####
 
