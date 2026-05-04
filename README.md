@@ -24,9 +24,7 @@
 
 ## 👥 Atores / Personas
 
-[Ver Personas](https://github.com/mateusmtognoli/eng-software2-2026-1/issues/1)
-
-### 🧓 Paciente
+- Paciente
 
 ⭢ Utiliza o sistema para controlar seus medicamentos  
 ⭢ Recebe alertas nos horários corretos  
@@ -36,7 +34,7 @@
 
 ---
 
-### 👨‍⚕️ Cuidador / Responsável
+- Cuidador / Responsável
 
 ⭢ Acompanha o uso de medicamentos do paciente  
 ⭢ Recebe notificações caso o medicamento não seja tomado  
@@ -46,13 +44,17 @@
 
 ---
 
-### 👩‍💻 Administrador
+- Administrador
 
 ⭢ Gerencia o funcionamento geral do sistema  
 ⭢ Monitora desempenho e disponibilidade  
 ⭢ Analisa dados e indicadores de uso  
 ⭢ Garante segurança e integridade dos dados  
 ⭢ Realiza manutenção e atualizações do sistema  
+
+---
+
+[Clique aqui para ver as Personas](DOCS/PERSONAS)
 
 ####
 
