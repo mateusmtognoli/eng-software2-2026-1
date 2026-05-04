@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<title>Casos de Uso — ReMed</title>
+<style>
+  body { margin: 0; background: #fff; font-family: Arial, sans-serif; }
+</style>
+</head>
+<body>
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="1900" viewBox="0 0 1200 1900">
+  <defs>
+    <marker id="open-arr" markerWidth="10" markerHeight="10" refX="9" refY="5" orient="auto">
+      <path d="M1 1 L9 5 L1 9" fill="none" stroke="#000" stroke-width="1.4"/>
+    </marker>
+  </defs>
+
+  <!-- TITLE -->
+  <text x="600" y="34" text-anchor="middle" font-size="20" font-weight="bold">Diagrama de Casos de Uso — ReMed</text>
+  <line x1="180" y1="42" x2="1020" y2="42" stroke="#999" stroke-width="1"/>
+
+  <!-- SYSTEM BOUNDARY -->
+  <rect x="180" y="56" width="840" height="1818" fill="none" stroke="#000" stroke-width="2" rx="4"/>
+  <text x="600" y="76" text-anchor="middle" font-size="15" font-weight="bold">Sistema ReMed</text>
+
+  <!-- ═══════════════════════════════════════════════════════════
+       SECTION 1 — DEPENDENTE / RESPONSÁVEL COMPARTILHADO
+       UCs centralizados em cx=600
+       Ator Dependente: x=80 (esquerda)
+       Ator Responsável: x=1120 (direita)
+  ═══════════════════════════════════════════════════════════ -->
+
+  <text x="600" y="97" text-anchor="middle" font-size="11" fill="#555">[Fluxo do Dependente e Responsável]</text>
+
+  <!-- UC1: Criar conta  cy=128 -->
+  <ellipse cx="600" cy="128" rx="130" ry="24" fill="white" stroke="#000" stroke-width="1.5"/>
+  <text x="600" y="132" text-anchor="middle" font-size="13">Criar conta</text>
+
+  <!-- UC_PD: Preencher dados complementares  cy=218  -->
+  <!-- indented right to leave room for <<include>> label -->
+  <ellipse cx="600" cy="222" rx="155" ry="24" fill="white" stroke="#000" stroke-width="1.5"/>
+  <text x="600" y="218" text-anchor="middle" font-size="13">Preencher dados</text>
+  <text x="600" y="232" text-anchor="middle" font-size="13">complementares</text>
+
+  <!-- <<include>> arrow: UC1 → UC_PD  (dashed, open arrowhead at target) -->
+  <line x1="600" y1="152" x2="600" y2="198" stroke="#000" stroke-width="1.2"
+        stroke-dasharray="6 3" marker-end="url(#open-arr)"/>
+  <text x="612" y="179" font-size="11">«include»</text>
+
+  <!-- UC2: Fazer login  cy=316 -->
+  <ellipse cx="600" cy="318" rx="130" ry="24" fill="white" stroke="#000" stroke-width="1.5"/>
+  <text x="600" y="322" text-anchor="middle" font-size="13">Fazer login</text>
+
+  <!-- UC3: Visualizar dashboard  cy=412 -->
+  <ellipse cx="600" cy="414" rx="130" ry="24" fill="white" stroke="#000" stroke-width="1.5"/>
+  <text x="600" y="418" text-anchor="middle" font-size="13">Visualizar dashboard</text>
+
+  <!-- UC_GE: Gerenciar estoque  cy=508   →  shifted right so label fits -->
+  <ellipse cx="760" cy="510" rx="130" ry="24" fill="white" stroke="#000" stroke-width="1.5"/>
+  <text x="760" y="514" text-anchor="middle" font-size="13">Gerenciar estoque</text>
+
+  <!-- <<extend>> arrow: UC_GE → UC3
+       Route: from left of UC_GE (630,510) go left to x=695, then up to (695,414), arrow right to UC3 right edge -->
+  <polyline points="630,510 695,510 695,414 730,414"
+            fill="none" stroke="#000" stroke-width="1.2"
+            stroke-dasharray="6 3" marker-end="url(#open-arr)"/>
+  <text x="698" y="464" font-size="11">«extend»</text>
+
+  <!-- UC_RM: Repor medicamento  cy=606 -->
+  <ellipse cx="760" cy="608" rx="130" ry="24" fill="white" stroke="#000" stroke-width="1.5"/>
+  <text x="760" y="612" text-anchor="middle" font-size="13">Repor medicamento</text>
+
+  <!-- <<extend>> arrow: UC_RM → UC_GE  (straight vertical) -->
+  <line x1="760" y1="584" x2="760" y2="534" stroke="#000" stroke-width="1.2"
+        stroke-dasharray="6 3" marker-end="url(#open-arr)"/>
+  <text x="772" y="563" font-size="11">«extend»</text>
+
+  <!-- UC4: Registrar dose tomada  cy=710 -->
+  <ellipse cx="600" cy="712" rx="140" ry="24" fill="white" stroke="#000" stroke-width="1.5"/>
+  <text x="600" y="716" text-anchor="middle" font-size="13">Registrar dose tomada</text>
+
+  <!-- UC5: Pular dose  cy=806 -->
+  <ellipse cx="600" cy="808" rx="130" ry="24" fill="white" stroke="#000" stroke-width="1.5"/>
+  <text x="600" y="812" text-anchor="middle" font-size="13">Pular dose</text>
+
+  <!-- UC6: Cadastrar medicamento  cy=902 -->
+  <ellipse cx="600" cy="904" rx="148" ry="24" fill="white" stroke="#000" stroke-width="1.5"/>
+  <text x="600" y="908" text-anchor="middle" font-size="13">Cadastrar medicamento</text>
+
+  <!-- UC7: Visualizar histórico  cy=998 -->
+  <ellipse cx="600" cy="1000" rx="130" ry="24" fill="white" stroke="#000" stroke-width="1.5"/>
+  <text x="600" y="1004" text-anchor="middle" font-size="13">Visualizar histórico</text>
+
+  <!-- UC8: Gerar relatório mensal  cy=1094 -->
+  <ellipse cx="600" cy="1096" rx="140" ry="24" fill="white" stroke="#000" stroke-width="1.5"/>
+  <text x="600" y="1100" text-anchor="middle" font-size="13">Gerar relatório mensal</text>
+
+  <!-- UC9: Receber notificação  cy=1190 -->
+  <ellipse cx="600" cy="1192" rx="130" ry="24" fill="white" stroke="#000" stroke-width="1.5"/>
+  <text x="600" y="1196" text-anchor="middle" font-size="13">Receber notificação</text>
+
+  <!-- UC10: Editar perfil  cy=1286 -->
+  <ellipse cx="600" cy="1288" rx="130" ry="24" fill="white" stroke="#000" stroke-width="1.5"/>
+  <text x="600" y="1292" text-anchor="middle" font-size="13">Editar perfil</text>
+
+  <!-- UC11: Configurar alertas  cy=1382 -->
+  <ellipse cx="600" cy="1384" rx="130" ry="24" fill="white" stroke="#000" stroke-width="1.5"/>
+  <text x="600" y="1388" text-anchor="middle" font-size="13">Configurar alertas</text>
+
+  <!-- ═══════════ ACTOR: DEPENDENTE (esquerda) ═══════════ -->
+  <circle cx="80" cy="740" r="22" fill="white" stroke="#000" stroke-width="1.5"/>
+  <line x1="80" y1="762" x2="80" y2="816" stroke="#000" stroke-width="1.5"/>
+  <line x1="48"  y1="784" x2="112" y2="784" stroke="#000" stroke-width="1.5"/>
+  <line x1="80" y1="816" x2="56"  y2="858" stroke="#000" stroke-width="1.5"/>
+  <line x1="80" y1="816" x2="104" y2="858" stroke="#000" stroke-width="1.5"/>
+  <text x="80" y="882" text-anchor="middle" font-size="13" font-weight="bold">Dependente</text>
+
+  <!-- Dependente → UCs (left side lines, all go right to left edge of each ellipse) -->
+  <line x1="102" y1="730" x2="470" y2="130"  stroke="#000" stroke-width="1"/>
+  <line x1="102" y1="742" x2="445" y2="222"  stroke="#000" stroke-width="1"/>
+  <line x1="102" y1="752" x2="470" y2="320"  stroke="#000" stroke-width="1"/>
+  <line x1="102" y1="760" x2="470" y2="416"  stroke="#000" stroke-width="1"/>
+  <line x1="102" y1="768" x2="460" y2="714"  stroke="#000" stroke-width="1"/>
+  <line x1="102" y1="776" x2="470" y2="810"  stroke="#000" stroke-width="1"/>
+  <line x1="102" y1="784" x2="452" y2="906"  stroke="#000" stroke-width="1"/>
+  <line x1="102" y1="790" x2="470" y2="1002" stroke="#000" stroke-width="1"/>
+  <line x1="102" y1="796" x2="460" y2="1098" stroke="#000" stroke-width="1"/>
+  <line x1="102" y1="802" x2="470" y2="1194" stroke="#000" stroke-width="1"/>
+  <line x1="102" y1="808" x2="470" y2="1290" stroke="#000" stroke-width="1"/>
+  <line x1="102" y1="814" x2="470" y2="1386" stroke="#000" stroke-width="1"/>
+
+  <!-- ═══════════ ACTOR: RESPONSÁVEL (direita) ═══════════ -->
+  <circle cx="1120" cy="740" r="22" fill="white" stroke="#000" stroke-width="1.5"/>
+  <line x1="1120" y1="762" x2="1120" y2="816" stroke="#000" stroke-width="1.5"/>
+  <line x1="1088" y1="784" x2="1152" y2="784" stroke="#000" stroke-width="1.5"/>
+  <line x1="1120" y1="816" x2="1096" y2="858" stroke="#000" stroke-width="1.5"/>
+  <line x1="1120" y1="816" x2="1144" y2="858" stroke="#000" stroke-width="1.5"/>
+  <text x="1120" y="882" text-anchor="middle" font-size="13" font-weight="bold">Responsável</text>
+
+  <!-- Responsável → UCs compartilhados (direita → esquerda, SEM Preencher dados) -->
+  <line x1="1098" y1="730" x2="730" y2="130"  stroke="#000" stroke-width="1"/>
+  <!-- sem linha para UC_PD (Preencher dados complementares) -->
+  <line x1="1098" y1="742" x2="730" y2="320"  stroke="#000" stroke-width="1"/>
+  <line x1="1098" y1="752" x2="730" y2="416"  stroke="#000" stroke-width="1"/>
+  <!-- Responsável NÃO liga a: Registrar dose tomada (cy=714) -->
+  <!-- Responsável NÃO liga a: Pular dose (cy=810) -->
+  <line x1="1098" y1="760" x2="748" y2="906"  stroke="#000" stroke-width="1"/>
+  <line x1="1098" y1="784" x2="730" y2="1002" stroke="#000" stroke-width="1"/>
+  <line x1="1098" y1="790" x2="740" y2="1098" stroke="#000" stroke-width="1"/>
+  <line x1="1098" y1="796" x2="730" y2="1194" stroke="#000" stroke-width="1"/>
+  <line x1="1098" y1="802" x2="730" y2="1290" stroke="#000" stroke-width="1"/>
+  <line x1="1098" y1="808" x2="730" y2="1386" stroke="#000" stroke-width="1"/>
+
+  <!-- ═══════════════════════════════════════════════════════════
+       DIVIDER — casos exclusivos do Responsável
+  ═══════════════════════════════════════════════════════════ -->
+  <line x1="188" y1="1424" x2="1012" y2="1424" stroke="#bbb" stroke-width="1" stroke-dasharray="6 4"/>
+  <text x="600" y="1444" text-anchor="middle" font-size="11" fill="#555">[Casos exclusivos do Responsável]</text>
+
+  <!-- UC12: Visualizar dashboard do dependente  cy=1472 -->
+  <ellipse cx="600" cy="1474" rx="168" ry="24" fill="white" stroke="#000" stroke-width="1.5"/>
+  <text x="600" y="1470" text-anchor="middle" font-size="13">Visualizar dashboard</text>
+  <text x="600" y="1484" text-anchor="middle" font-size="13">do dependente</text>
+
+  <!-- UC13: Gerenciar dependentes  cy=1558 -->
+  <ellipse cx="600" cy="1560" rx="148" ry="24" fill="white" stroke="#000" stroke-width="1.5"/>
+  <text x="600" y="1564" text-anchor="middle" font-size="13">Gerenciar dependentes</text>
+
+  <!-- UC14: Gerenciar rede de cuidado  cy=1644 -->
+  <ellipse cx="600" cy="1646" rx="148" ry="24" fill="white" stroke="#000" stroke-width="1.5"/>
+  <text x="600" y="1642" text-anchor="middle" font-size="13">Gerenciar rede</text>
+  <text x="600" y="1656" text-anchor="middle" font-size="13">de cuidado</text>
+
+  <!-- UC15: Exportar relatório de adesão  cy=1730 -->
+  <ellipse cx="600" cy="1732" rx="148" ry="24" fill="white" stroke="#000" stroke-width="1.5"/>
+  <text x="600" y="1728" text-anchor="middle" font-size="13">Exportar relatório</text>
+  <text x="600" y="1742" text-anchor="middle" font-size="13">de adesão</text>
+
+  <!-- UC16: Configurar conta e notificações  cy=1816 -->
+  <ellipse cx="600" cy="1818" rx="168" ry="24" fill="white" stroke="#000" stroke-width="1.5"/>
+  <text x="600" y="1814" text-anchor="middle" font-size="13">Configurar conta</text>
+  <text x="600" y="1828" text-anchor="middle" font-size="13">e notificações</text>
+
+  <!-- Responsável → UCs exclusivos (do lado direito, linhas em Y mais baixo que o corpo) -->
+  <line x1="1098" y1="818" x2="768" y2="1474" stroke="#000" stroke-width="1"/>
+  <line x1="1098" y1="826" x2="748" y2="1560" stroke="#000" stroke-width="1"/>
+  <line x1="1098" y1="834" x2="748" y2="1646" stroke="#000" stroke-width="1"/>
+  <line x1="1098" y1="840" x2="748" y2="1732" stroke="#000" stroke-width="1"/>
+  <line x1="1098" y1="847" x2="768" y2="1818" stroke="#000" stroke-width="1"/>
+
+
+</svg>
+</body>
+</html>
