@@ -227,7 +227,7 @@ O administrador é responsável pela gestão e manutenção do sistema:
 
 - Diagramas de Casos de Uso
   
-[Clique aqui para ver os diagramas de casos de uso](DOCS/CASOS_DE_USO)
+[Clique aqui para ver os diagramas de casos de uso](https://github.com/mateusmtognoli/eng-software2-2026-1/tree/main/DOCS/CASOS%20DE%20USO)
 
 ####
 
