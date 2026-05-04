@@ -207,7 +207,7 @@ O administrador é responsável pela gestão e manutenção do sistema:
 
 - Diagramas de Casos de Uso
   
-[CLique aqui para ver os diagramas de casos de uso](DOCS/CASOS_DE_USO)
+[Clique aqui para ver os diagramas de casos de uso](DOCS/CASOS_DE_USO)
 
 ####
 
