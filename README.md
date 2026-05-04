@@ -113,7 +113,7 @@
 
 ## 📝 Casos de Uso
 
-[Ver Casos de Uso](adicionarlinkaqui)
+[Ver Casos de Uso](https://github.com/mateusmtognoli/eng-software2-2026-1/tree/e276870ed7159e77d61e4183302c9812b0004fc0/DOCS/CASOS_DE_USO)
 
 ####
 
