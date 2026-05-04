@@ -108,7 +108,6 @@
 | RNF12 | O sistema deve ter alta confiabilidade na execução dos alarmes (não pode falhar). | Confiabilidade |
 | RNF13 | O sistema deve ter instalação simples e leve (tamanho reduzido do app). | Portabilidade |
 | RNF14 | O sistema deve possuir linguagem clara e compreensível. | Usabilidade |
-| RNF15 | O sistema deve suportar múltiplos idiomas (português, inglês, etc.). | Internacionalização |
 
 #####
 
