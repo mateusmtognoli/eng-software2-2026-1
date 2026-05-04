@@ -211,7 +211,7 @@ O administrador é responsável pela gestão e manutenção do sistema:
 
 ####
 
-🧩 Diagrama de Classes
+## 🧩 Diagrama de Classes
 
 O diagrama de classes apresenta a estrutura do sistema, incluindo suas entidades, atributos, métodos e relacionamentos.
 
