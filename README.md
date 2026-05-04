@@ -135,7 +135,40 @@
 
 ####
 
-## 💻Protótipo
+## 💻Prototipação
+
+A prototipação do sistema foi realizada com o objetivo de visualizar a interface do usuário e validar a experiência antes da implementação.
+
+
+Foram desenvolvidos protótipos de alta fidelidade, representando as principais telas do sistema, como:
+
+   ⭢ Tela de login e cadastro
+
+   ⭢ Dashboard do usuário
+
+   ⭢ Cadastro de medicamentos
+
+   ⭢ Configuração de horários e alarmes
+
+   ⭢ Histórico de ingestão
+
+
+Os protótipos permitiram identificar melhorias na usabilidade, organização das informações e fluxo de navegação, garantindo uma experiência mais intuitiva para o usuário final.
+
+- Ferramentas utilizadas:
+
+  ⭢ Google Stitch
+
+  ⭢ Google AI Studio
+
+- Preview do Protótipo
+
+![Dashboard do Usuário](https://github.com/mateusmtognoli/eng-software2-2026-1/blob/main/DOCS/IMAGENS%20PROTOTIPO/tela-inicial-remed.png)
+![Dashboard do Administrador](https://github.com/mateusmtognoli/eng-software2-2026-1/blob/main/DOCS/IMAGENS%20PROTOTIPO/tela-inicial-remed-administrador.png)
+
+- Acesso ao Protótipo
+
+Caso queira visualizar o protótipo completo, acesse:
 
 [Ver Protótipo - Versão Usuários](https://ais-pre-4j3ii52jwzrkr4q653denk-157702196272.us-west2.run.app)
 
