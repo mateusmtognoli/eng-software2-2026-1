@@ -11,6 +11,26 @@
 
 #####
 
+## 🎥 Apresentação do Projeto
+
+Para uma melhor compreensão do funcionamento do sistema, foi desenvolvida um vídeo de apresentação demonstrando suas principais funcionalidades, objetivos e estrutura.
+
+Nela, são abordados:
+
+⭢ Dores resolvidas
+
+⭢ Diagrama de Casos de Uso
+
+⭢ Diagrama de Classes
+
+⭢ Apresentação do protótipo
+
+---
+
+[Clique aqui para ver o vídeo de apresentação](https://youtu.be/zbpmw8rTQWk)
+
+####
+
 ## 🎯 Objetivos
 
 ⭢ Garantir o uso correto dos medicamentos  
@@ -320,26 +340,6 @@ Caso queira visualizar o protótipo completo, acesse:
 [Protótipo - Versão Usuários](https://ais-pre-4j3ii52jwzrkr4q653denk-157702196272.us-west2.run.app)
 
 [Protótipo - Versão Administrador](https://stitch.withgoogle.com/preview/12183420891408613794?node-id=bdce2ebd1bd34224964dc9ea0783f5f6)
-
-####
-
-## 🎥 Apresentação do Projeto
-
-Para uma melhor compreensão do funcionamento do sistema, foi desenvolvida um vídeo de apresentação demonstrando suas principais funcionalidades, objetivos e estrutura.
-
-Nela, são abordados:
-
-⭢ Dores resolvidas
-
-⭢ Diagrama de Casos de Uso
-
-⭢ Diagrama de Classes
-
-⭢ Apresentação do protótipo
-
----
-
-[Clique aqui para ver o vídeo de apresentação](https://youtu.be/zbpmw8rTQWk)
 
 ####
 
