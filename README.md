@@ -273,7 +273,7 @@ O sistema é composto pelas seguintes classes principais:
 
 ---
 
-[Clique aqui para acessar o diagrama de classes](https://github.com/mateusmtognoli/eng-software2-2026-1/blob/main/DOCS/Diagrama-de-Classes-ReMed.png)
+[Clique aqui para acessar o diagrama de classes](DOCS/Diagrama-de-Classes-ReMed.png)
 
 ####
 
