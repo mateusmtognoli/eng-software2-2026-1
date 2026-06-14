@@ -44,23 +44,31 @@ Nela, são abordados:
 
 ## 👥 Atores / Personas
 
-- Paciente
+- Usuário (Responsável)
 
-⭢ Utiliza o sistema para controlar seus medicamentos  
-⭢ Recebe alertas nos horários corretos  
-⭢ Confirma a ingestão dos remédios  
-⭢ Precisa de uma interface simples e acessível  
-⭢ Pode visualizar seu histórico de uso  
+⭢ Realiza o cadastro e autenticação no sistema
+
+⭢ Gerencia seus dependentes e suas informações pessoais
+
+⭢ Cadastra, edita e remove medicamentos dos dependentes
+
+⭢ Acompanha o histórico e as estatísticas de adesão ao tratamento
+
+⭢ Monitora o estoque dos medicamentos e recebe informações sobre sua disponibilidade
 
 ---
 
-- Cuidador / Responsável
+- Dependente
 
-⭢ Acompanha o uso de medicamentos do paciente  
-⭢ Recebe notificações caso o medicamento não seja tomado  
-⭢ Auxilia na organização da rotina de medicação  
-⭢ Monitora o histórico de ingestão  
-⭢ Pode gerenciar medicamentos do paciente  
+⭢ Representa a pessoa que faz uso dos medicamentos cadastrados
+
+⭢ Possui informações médicas e pessoais para auxiliar no acompanhamento do tratamento
+
+⭢ Tem sua rotina de medicação monitorada pelo sistema
+
+⭢ Possui registros de adesão utilizados para acompanhamento da administração dos medicamentos
+
+⭢ Está vinculado a um usuário responsável pelo gerenciamento de seus dados
 
 ---
 
