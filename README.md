@@ -149,9 +149,7 @@ Os casos de uso representam as interações entre os diferentes tipos de usuári
 
 O sistema foi projetado considerando quatro tipos de atores:
 
-⭢ Paciente (Independente)
-
-⭢ Paciente Dependente
+⭢ Dependente
 
 ⭢ Responsável
 
@@ -159,31 +157,15 @@ O sistema foi projetado considerando quatro tipos de atores:
 
 ---
 
-- Paciente (Independente)
-
-O paciente independente possui controle total sobre suas ações dentro do sistema:
-
-⭢ UC01: Visualizar lista diária de medicamentos
-
-⭢ UC02: Confirmar ingestão de medicamento
-
-⭢ UC03: Visualizar histórico de ingestão
-
-⭢ UC04: Configurar lembretes (som/vibração)
-
----
-
-- Paciente Dependente
+- Dependente
 
 O paciente dependente possui interações mais limitadas e assistidas:
 
 ⭢ UCD01: Receber notificação de medicamento
 
-⭢ UCD02: Confirmar ingestão via notificação
+⭢ UCD02: Visualizar lista diária (somente leitura)
 
-⭢ UCD03: Visualizar lista diária (somente leitura)
-
-⭢ UCD04: Receber alerta recorrente (caso não confirme)
+⭢ UCD03: Receber alerta recorrente (caso não confirme)
 
 ---
 
@@ -207,8 +189,6 @@ O responsável atua no acompanhamento e gestão dos pacientes dependentes:
 
 ⭢ UC08: Gerenciar dependentes
 
-⭢ UC09: Gerenciar rede de cuidado
-
 ---
 
 🛠️ Administrador
@@ -221,7 +201,7 @@ O administrador é responsável pela gestão e manutenção do sistema:
 
 ⭢ UC14: Garantir segurança dos dados
 
-⭢ UC15: Configurar backup automático
+⭢ UC15: Configurar backups automáticos
 
 ---
 
@@ -293,7 +273,7 @@ O sistema é composto pelas seguintes classes principais:
 
 ---
 
-[Clique aqui para acessar o diagrama de classes](DOCS/diagrama_classes_remed.png)
+[Clique aqui para acessar o diagrama de classes](DOCS/Diagrama-de-Classes-ReMed.png)
 
 ####
 
@@ -328,8 +308,8 @@ Os protótipos permitiram identificar melhorias na usabilidade, organização da
 
 - Preview do Protótipo
 
-![Dashboard do Usuário](https://github.com/mateusmtognoli/eng-software2-2026-1/blob/main/DOCS/IMAGENS%20PROTOTIPO/tela-inicial-remed.png)
-![Dashboard do Administrador](https://github.com/mateusmtognoli/eng-software2-2026-1/blob/main/DOCS/IMAGENS%20PROTOTIPO/tela-inicial-remed-administrador.png)
+![Dashboard do Responsável](https://github.com/mateusmtognoli/eng-software2-2026-1/blob/main/DOCS/IMAGENS%20PROTOTIPO/tela-inicial-remed.png)
+![Dashboard do Dependente]()
 
 ---
 
@@ -337,17 +317,15 @@ Os protótipos permitiram identificar melhorias na usabilidade, organização da
 
 Caso queira visualizar o protótipo completo, acesse:
 
-[Protótipo - Versão Usuários](https://ais-pre-4j3ii52jwzrkr4q653denk-157702196272.us-west2.run.app)
-
-[Protótipo - Versão Administrador](https://stitch.withgoogle.com/preview/12183420891408613794?node-id=bdce2ebd1bd34224964dc9ea0783f5f6)
+[Protótipo](https://ais-pre-xvhpc3wsfkklewlz4lgn44-157702196272.us-west2.run.app/login)
 
 ####
 
 ## 🛠️ Tecnologias Utilizadas (Futuramente)
 
-- Frontend: React Native
+- Frontend: React Native/TypeScript
 - Backend: TypeScript
-- Banco de Dados: MySQL / SQLite
+- Banco de Dados: Supabase/Firebase
 
 ####
 
