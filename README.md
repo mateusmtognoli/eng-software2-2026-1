@@ -163,6 +163,8 @@ O sistema foi projetado considerando dois tipos de atores principais:
 
 ⭢ Responsável
 
+⭢ Administrador
+
 ---
 
 👤 Dependente (Conta Emparelhada)
@@ -240,6 +242,30 @@ O responsável possui acesso completo às funcionalidades de gerenciamento de me
 ⭢ UC21: Gerar código de emparelhamento
 
 ⭢ UC22: Gerenciar cuidadores e solicitações
+
+---
+
+🛠️ Administrador
+
+O administrador possui acesso às funcionalidades de supervisão e gerenciamento do sistema, sendo responsável por acompanhar o funcionamento da plataforma e visualizar informações gerais sobre os usuários e recursos cadastrados.
+
+⭢ UCADM01: Gerenciar sistema
+
+⭢ UCADM02: Monitorar desempenho do sistema
+
+⭢ UCADM03: Visualizar dashboard administrativo
+
+⭢ UCADM04: Visualizar responsáveis cadastrados
+
+⭢ UCADM05: Visualizar dependentes cadastrados
+
+⭢ UCADM06: Visualizar medicamentos cadastrados
+
+⭢ UCADM07: Visualizar relatórios e estatísticas
+
+⭢ UCADM08: Realizar manutenção do sistema
+
+⭢ UCADM09: Gerenciar backups
 
 ---
 
