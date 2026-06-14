@@ -255,13 +255,11 @@ O diagrama de classes apresenta a estrutura do sistema ReMed, descrevendo suas p
 
 ---
 
-- Principais Entidades:
+- Entidades:
 
 O sistema é composto pelas seguintes classes principais:
 
-⭢ Usuário
-
-⭢ MetadadosUsuario
+⭢ Usuário (Responsável)
 
 ⭢ Dependente
 
@@ -280,7 +278,6 @@ Além das enumerações:
 ---
 
 - Relacionamentos:
-
 
 ⭢ Um Usuário possui exatamente um conjunto de MetadadosUsuario, contendo informações complementares, como nome.
 
@@ -314,7 +311,7 @@ Além das enumerações:
 
 [Clique aqui para acessar o diagrama de classes](DOCS/Diagrama-de-Classes-ReMed.png)
 
-####
+#####
 
 ## 💻 Prototipação
 
@@ -327,6 +324,8 @@ Foram desenvolvidos protótipos de alta fidelidade, representando as principais 
    ⭢ Dashboard do usuário
 
    ⭢ Cadastro de medicamentos
+
+   ⭢ Gerenciamento de Estoque
 
    ⭢ Configuração de horários e alarmes
 
