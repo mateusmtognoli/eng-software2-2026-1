@@ -273,7 +273,7 @@ O sistema é composto pelas seguintes classes principais:
 
 ---
 
-[Clique aqui para acessar o diagrama de classes](DOCS/Diagrama-de-Classes-ReMed.png)
+[Clique aqui para acessar o diagrama de classes](https://github.com/mateusmtognoli/eng-software2-2026-1/blob/main/DOCS/Diagrama-de-Classes-ReMed.png)
 
 ####
 
@@ -308,8 +308,8 @@ Os protótipos permitiram identificar melhorias na usabilidade, organização da
 
 - Preview do Protótipo
 
-![Dashboard do Responsável](https://github.com/mateusmtognoli/eng-software2-2026-1/blob/main/DOCS/IMAGENS%20PROTOTIPO/tela-inicial-remed.png)
-![Dashboard do Dependente]()
+![Dashboard do Responsável](https://github.com/mateusmtognoli/eng-software2-2026-1/blob/main/DOCS/IMAGENS%20PROTOTIPO/Tela-Inicial-Responsavel-ReMed.jpeg)
+![Dashboard do Dependente](https://github.com/mateusmtognoli/eng-software2-2026-1/blob/main/DOCS/IMAGENS%20PROTOTIPO/Tela-Inicial-Dependente-ReMed.jpeg)
 
 ---
 
@@ -321,9 +321,9 @@ Caso queira visualizar o protótipo completo, acesse:
 
 ####
 
-## 🛠️ Tecnologias Utilizadas (Futuramente)
+## 🛠️ Tecnologias Previstas
 
-- Frontend: React Native/TypeScript
+- Frontend: React Native
 - Backend: TypeScript
 - Banco de Dados: Supabase/Firebase
 
