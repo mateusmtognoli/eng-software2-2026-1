@@ -147,61 +147,89 @@ Nela, são abordados:
 
 Os casos de uso representam as interações entre os diferentes tipos de usuários e o sistema, descrevendo suas funcionalidades principais.
 
-O sistema foi projetado considerando quatro tipos de atores:
+O sistema foi projetado considerando dois tipos de atores principais:
 
-⭢ Dependente
+⭢ Dependente (Conta Emparelhada)
 
 ⭢ Responsável
 
-⭢ Administrador
+---
+
+👤 Dependente (Conta Emparelhada)
+
+O paciente dependente possui acesso simplificado, focado no acompanhamento das medicações e recebimento de informações enviadas pelo responsável.
+
+⭢ UCD01: Visualizar notificações
+
+⭢ UCD02: Visualizar dashboard (próximas doses)
+
+⭢ UCD03: Visualizar histórico de doses
+
+⭢ UCD04: Emparelhar celular ao responsável
+
+⭢ UCD05: Sair da conta (logout)
 
 ---
 
-- Dependente
+👨‍👩‍👧 Responsável
 
-O paciente dependente possui interações mais limitadas e assistidas:
+O responsável possui acesso completo às funcionalidades de gerenciamento de medicamentos, estoque, notificações, segurança e administração dos dependentes.
 
-⭢ UCD01: Receber notificação de medicamento
+- Autenticação e Conta
 
-⭢ UCD02: Visualizar lista diária (somente leitura)
+⭢ UC01: Cadastrar-se
 
-⭢ UCD03: Receber alerta recorrente (caso não confirme)
+⭢ UC02: Completar dados adicionais
 
----
+⭢ UC03: Realizar login
 
-- Responsável
+⭢ UC04: Recuperar senha
 
-O responsável atua no acompanhamento e gestão dos pacientes dependentes:
+⭢ UC05: Editar perfil
 
-⭢ UC01: Criar conta
+⭢ UC06: Excluir conta
 
-⭢ UC02: Fazer login
+⭢ UC07: Sair da conta (logout)
 
-⭢ UC03: Visualizar dashboard
+- Segurança
 
-⭢ UC04: Cadastrar medicamento
+⭢ UC08: Alterar senha
 
-⭢ UC05: Visualizar histórico
+⭢ UC09: Configurar autenticação de dois fatores
 
-⭢ UC06: Gerar relatório mensal
+⭢ UC10: Gerenciar sessões ativas
 
-⭢ UC07: Visualizar dashboard do dependente
+- Gerenciamento de Medicamentos
 
-⭢ UC08: Gerenciar dependentes
+⭢ UC11: Visualizar dashboard (próximas doses)
 
----
+⭢ UC12: Adicionar medicamento
 
-🛠️ Administrador
+⭢ UC13: Registrar dose tomada
 
-O administrador é responsável pela gestão e manutenção do sistema:
+⭢ UC14: Visualizar histórico de doses
 
-⭢ UC12: Monitorar desempenho do sistema
+- Controle de Estoque
 
-⭢ UC13: Realizar manutenção e atualizações
+⭢ UC15: Adicionar item ao estoque
 
-⭢ UC14: Garantir segurança dos dados
+⭢ UC16: Visualizar estoque
 
-⭢ UC15: Configurar backups automáticos
+⭢ UC17: Repor estoque
+
+- Notificações
+
+⭢ UC18: Visualizar notificações
+
+⭢ UC19: Configurar preferências de notificação
+
+- Gerenciamento de Acessos
+
+⭢ UC20: Adicionar dependente
+
+⭢ UC21: Gerar código de emparelhamento
+
+⭢ UC22: Gerenciar cuidadores e solicitações
 
 ---
 
@@ -213,63 +241,64 @@ O administrador é responsável pela gestão e manutenção do sistema:
 
 ## 🧩 Diagrama de Classes
 
-O diagrama de classes apresenta a estrutura do sistema, incluindo suas entidades, atributos, métodos e relacionamentos.
+O diagrama de classes apresenta a estrutura do sistema ReMed, descrevendo suas principais entidades, atributos e relacionamentos, modelados conforme os princípios da orientação a objetos e da UML tradicional.
 
 ---
 
-- Principais Entidades
+- Principais Entidades:
 
 O sistema é composto pelas seguintes classes principais:
 
-⭢ Usuário (classe base)
+⭢ Usuário
+
+⭢ MetadadosUsuario
 
 ⭢ Dependente
 
-⭢ Responsável
-
-⭢ Administrador
-
 ⭢ Medicamento
 
-⭢ LembreteDose
+⭢ ItemEstoque
 
-⭢ RegistroDose
+⭢ EstatisticaAdesao
 
-⭢ EstoqueMedicamento
+Além das enumerações:
 
-⭢ Notificação
+⭢ StatusMedicamento
 
-⭢ RelatorioAdesao
-
-⭢ FichaMedica
-
-⭢ Instituição
+⭢ StatusEstoque
 
 ---
 
-- Relacionamentos
-  
-⭢ A classe Usuário possui herança para Dependente, Responsável e Administrador
+- Relacionamentos:
 
-⭢ Um Dependente possui uma Ficha Médica
 
-⭢ Um Medicamento está associado a lembretes e registros de dose
+⭢ Um Usuário possui exatamente um conjunto de MetadadosUsuario, contendo informações complementares, como nome.
 
-⭢ O sistema gera Notificações para os usuários
+⭢ Um Usuário pode possuir zero ou vários Dependentes, sendo responsável pelo gerenciamento de seus dados.
 
-⭢ Dados de uso são consolidados em Relatórios de Adesão
+⭢ Cada Dependente possui zero ou vários Medicamentos cadastrados para acompanhamento do tratamento.
 
-⭢ O Administrador gerencia o sistema e suas configurações
+⭢ Cada Dependente possui zero ou vários registros de EstatisticaAdesao, utilizados para acompanhar a adesão ao tratamento ao longo do tempo.
+
+⭢ Cada Medicamento pode estar associado a zero ou um ItemEstoque, permitindo o controle da quantidade disponível do medicamento.
+
+⭢ A classe Medicamento utiliza a enumeração StatusMedicamento para representar o estado atual da administração da dose (Pendente, Tomado, Atrasado ou Pulado).
+
+⭢ A classe ItemEstoque utiliza a enumeração StatusEstoque para indicar a situação do estoque (Normal, Alerta ou Crítico).
 
 ---
 
-- Observações Técnicas
-  
-⭢ O modelo utiliza conceitos de herança, composição e agregação
+- Observações Técnicas:
 
-⭢ Os identificadores são baseados em UUID
+⭢ O modelo utiliza composição para representar relações de forte dependência entre as entidades, como entre Usuário e MetadadosUsuario, Dependente e Medicamento, e Dependente e EstatisticaAdesao.
 
-⭢ O sistema contempla controle de estoque, notificações e relatórios
+⭢ O diagrama emprega associações com multiplicidades, evidenciando a cardinalidade dos relacionamentos entre as classes.
+
+⭢ As enumerações StatusMedicamento e StatusEstoque foram modeladas como tipos específicos para garantir a consistência dos estados do sistema.
+
+⭢ Os identificadores das entidades são representados por atributos do tipo String, podendo ser implementados utilizando UUID para assegurar unicidade.
+
+⭢ O modelo contempla funcionalidades de gerenciamento de dependentes, controle de medicamentos, monitoramento da adesão ao tratamento e controle de estoque, servindo como base para a implementação do sistema ReMed.
 
 ---
 
