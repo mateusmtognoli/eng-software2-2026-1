@@ -251,15 +251,13 @@ O responsável possui acesso completo às funcionalidades de gerenciamento de me
 
 ## 🧩 Diagrama de Classes
 
-O diagrama de classes apresenta a estrutura do sistema ReMed, descrevendo suas principais entidades, atributos e relacionamentos, modelados conforme os princípios da orientação a objetos e da UML tradicional.
-
----
+O diagrama de classes apresenta a estrutura do sistema ReMed, descrevendo suas principais entidades, atributos, enumerações e relacionamentos, modelados conforme os princípios da orientação a objetos e da UML.
 
 - Entidades:
 
 O sistema é composto pelas seguintes classes principais:
 
-⭢ Usuário (Responsável)
+⭢ Responsável
 
 ⭢ Dependente
 
@@ -269,43 +267,75 @@ O sistema é composto pelas seguintes classes principais:
 
 ⭢ EstatisticaAdesao
 
+⭢ Notificacao
+
+⭢ Administrador
+
 Além das enumerações:
 
 ⭢ StatusMedicamento
 
 ⭢ StatusEstoque
 
+⭢ TipoNotificacao
+
+⭢ DiasSemana
+
 ---
 
 - Relacionamentos:
 
-⭢ Um Usuário possui exatamente um conjunto de MetadadosUsuario, contendo informações complementares, como nome.
+⭢ Um Responsável pode possuir zero ou vários Dependentes, sendo responsável pelo gerenciamento de seus dados e tratamentos.
 
-⭢ Um Usuário pode possuir zero ou vários Dependentes, sendo responsável pelo gerenciamento de seus dados.
+⭢ Cada Dependente está associado a exatamente um Responsável.
 
-⭢ Cada Dependente possui zero ou vários Medicamentos cadastrados para acompanhamento do tratamento.
+⭢ Um Dependente pode possuir zero ou vários Medicamentos cadastrados para acompanhamento do tratamento.
 
-⭢ Cada Dependente possui zero ou vários registros de EstatisticaAdesao, utilizados para acompanhar a adesão ao tratamento ao longo do tempo.
+⭢ Cada Medicamento pertence a exatamente um Dependente.
 
-⭢ Cada Medicamento pode estar associado a zero ou um ItemEstoque, permitindo o controle da quantidade disponível do medicamento.
+⭢ Um Dependente pode possuir zero ou vários registros de EstatisticaAdesao, utilizados para monitorar a adesão ao tratamento ao longo do tempo.
+
+⭢ Cada registro de EstatisticaAdesao pertence a exatamente um Dependente.
+
+⭢ Um Medicamento pode gerar zero ou várias Notificações, utilizadas para lembretes, alertas de atraso ou avisos relacionados ao tratamento.
+
+⭢ Um Responsável pode receber zero ou várias Notificações.
+
+⭢ Cada Notificação está associada a um único Responsável.
+
+⭢ Cada Notificação utiliza a enumeração TipoNotificacao, que define sua categoria (Lembrete, Atraso ou Estoque).
+
+⭢ A enumeração DiasSemana é utilizada para representar os dias em que notificações e medicamentos podem ser programados.
+
+⭢ Um Medicamento pode estar associado a zero ou um ItemEstoque, permitindo o controle da quantidade disponível.
+
+⭢ Cada ItemEstoque está vinculado a um único Medicamento.
 
 ⭢ A classe Medicamento utiliza a enumeração StatusMedicamento para representar o estado atual da administração da dose (Pendente, Tomado, Atrasado ou Pulado).
 
 ⭢ A classe ItemEstoque utiliza a enumeração StatusEstoque para indicar a situação do estoque (Normal, Alerta ou Crítico).
 
+⭢ A classe Administrador possui dependências com as entidades Responsável, Dependente, Medicamento e Relatórios e Estatísticas, representando sua capacidade de gerenciamento e supervisão do sistema.
+
 ---
 
 - Observações Técnicas:
 
-⭢ O modelo utiliza composição para representar relações de forte dependência entre as entidades, como entre Usuário e MetadadosUsuario, Dependente e Medicamento, e Dependente e EstatisticaAdesao.
+⭢ O modelo utiliza composição para representar relações de forte dependência entre as entidades, como entre Responsável e Dependente, Dependente e Medicamento, e Dependente e EstatisticaAdesao.
 
 ⭢ O diagrama emprega associações com multiplicidades, evidenciando a cardinalidade dos relacionamentos entre as classes.
 
-⭢ As enumerações StatusMedicamento e StatusEstoque foram modeladas como tipos específicos para garantir a consistência dos estados do sistema.
+⭢ As enumerações StatusMedicamento, StatusEstoque, TipoNotificacao e DiasSemana foram modeladas como tipos específicos para garantir a consistência dos dados e das regras de negócio.
 
 ⭢ Os identificadores das entidades são representados por atributos do tipo String, podendo ser implementados utilizando UUID para assegurar unicidade.
 
-⭢ O modelo contempla funcionalidades de gerenciamento de dependentes, controle de medicamentos, monitoramento da adesão ao tratamento e controle de estoque, servindo como base para a implementação do sistema ReMed.
+⭢ A entidade Notificacao permite o gerenciamento de alertas e lembretes enviados aos usuários, armazenando informações como título, mensagem, data, canal de envio e status de leitura.
+
+⭢ A entidade ItemEstoque possibilita o monitoramento da disponibilidade de medicamentos, incluindo quantidade atual, quantidade registrada e status do estoque.
+
+⭢ A entidade EstatisticaAdesao fornece métricas de acompanhamento do tratamento, registrando doses tomadas, total de doses previstas e percentual de adesão.
+
+⭢ O modelo contempla funcionalidades de gerenciamento de usuários, dependentes, medicamentos, notificações, controle de estoque, acompanhamento da adesão ao tratamento e administração do sistema, servindo como base para a implementação do ReMed.
 
 ---
 
